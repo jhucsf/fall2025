@@ -38,4 +38,13 @@ Gradescope.
 
 ## News
 
-* Aug 25 — Welcome back!
+* **Aug 17** — Welcome back! You will need an iClicker remote in order
+  to participate in in-class peer instruction activities. You have
+  two options:
+  1. Borrow one: fill out the form at <https://forms.gle/4WPK5MieVZujTyjR9>
+     and pick up an iClicker either Friday, Aug 22nd, 1–3 pm,
+     outside Malone Hall (under the colonnade connecting to Mason Hall),
+     or Monday, Aug 25th, 8-8:30 am, Hodson second floor lobby.
+  2. Use your own: fill out the form at <https://forms.gle/fZzYRurip8jWyH768>
+     to register your iClicker's remote id (so we can connect your poll
+     responses to your participation grade.)
