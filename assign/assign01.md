@@ -25,11 +25,13 @@ and you will also write unit tests to test these functions.
 
 Milestone 1 (15% of the assignment grade):
 
-* TODO: which functions are tested
+* Implementation of `fixpoint_init`, `fixpoint_get_whole`, `fixpoint_get_frac`,
+  `fixpoint_is_negative`, and `fixpoint_negate` functions (15%)
 
 Milestone 2 (85% of the assignment grade):
 
-* TODO: which functions are tested
+* Implementation of `fixpoint_add`, `fixpoint_sub`, `fixpoint_mul`,
+  and `fixpoint_compare` functions (65%)
 * Comprehensiveness and quality of your unit tests (10%)
 * Design and coding style (10%)
 
