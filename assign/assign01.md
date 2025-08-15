@@ -99,3 +99,63 @@ typedef struct {
 This is a "32.32" fixed point type. The `whole` field represents 32 bits to
 the left of the decimal point, and the `frac` field represents 32 bits to the
 right of the decimal point.
+
+## Arithmetic Operations
+
+The `fixpoint.h` header file declares the following public API functions
+to perform operations on `fixpoint_t` instances:
+
+* `fixpoint_init`
+* `fixpoint_get_whole`
+* `fixpoint_get_frac`
+* `fixpoint_is_negative`
+* `fixpoint_negate`
+* `fixpoint_add`
+* `fixpoint_sub`
+* `fixpoint_mul`
+
+Each public API function has a detailed documentation comment describing the
+expected behavior of the function.
+
+Your primary task in this assignment is to add code to the `fixpoint.c` source
+file to implement each of the public API functions.
+
+## Unit Tests
+
+The source file `fixpoint_tests.c` contains unit tests for the `fixpoint_t`
+data type and its operations.
+
+A minimal but useful set of unit tests are provided for you. These tests
+play an important role in defining how the public API functions should work,
+since they provide explicit examples of how correct implementations of the
+public functions are expected to behave.
+
+To compile and run the unit test program:
+
+```bash
+# compile the unit test program
+make clean
+make depend
+make -j
+
+# run the unit test program
+./fixpoint_tests
+```
+
+When you run the unit test program, you should see output something like
+the following:
+
+```text
+test_init...passed!
+test_get_whole...passed!
+test_get_frac...passed!
+test_is_negative...passed!
+test_negate...passed!
+test_add...passed!
+test_sub...passed!
+test_mul...passed!
+All tests passed!
+```
+
+If a test assertion fails, you will see a message indiating the source
+location of the failed assertion.
