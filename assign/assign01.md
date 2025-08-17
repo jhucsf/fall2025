@@ -57,6 +57,17 @@ curl -O https://jhucsf.github.io/fall2025/assign/csf_assign01.zip
 
 Note that in the `-O` option, it is the letter "O", not the numeral "0".
 
+## Important Requirement
+
+<div class='admonition caution'>
+  <div class='title'>Important!</div>
+  <div class='content' markdown='1'>
+In your code for this assignment, you must do all integer arithmetic using
+`uint32_t` and `uint64_t` values.  You may **not** use operations on integer values
+with more than 64 bits, e.g., values belonging to the nonstandard `__uint128_t` type.
+  </div>
+</div>
+
 # Unsigned integers, fixed point numbers
 
 You should be familiar with unsigned integer data types from your previous
@@ -194,3 +205,81 @@ All tests passed!
 
 If a test assertion fails, you will see a message indiating the source
 location of the failed assertion.
+
+## Hints and Suggestions
+
+This section has some advice on implementing specific operations.
+
+### `fixpoint_negate`, `fixpoint_is_negative`
+
+Keep in mind that 0 is not negative. If the magnitude of a `fixpoint_t` value is 0,
+then its `negative` field should be set to `false`.
+
+Note that `fixpoint_init` may assume as a precondition that its `negative` parameter
+will not be `true` if the `whole` and `frac` parameters are both 0.
+
+### `fixpoint_add`
+
+You can break this operation into two cases: adding values with the same sign, and
+adding values with different signs.
+
+If the values being added have the same sign, then the result's magnitude is the
+sum of the magnitudes of the values being added, and the result's sign is the same
+as the sign of the values being added. Note that overflow is possible.
+If overflow occurs, the result value's whole part should be the truncation of
+the correct whole part, i.e., just the low 32 bits of the correct whole part.
+
+Addition of magnitudes can be implemented as follows:
+
+1. Add the fractional parts to compute the result's fractional part
+2. If the addition of the fractional parts overflowed, make a note to
+   carry a 1 into the addition of the whole parts
+3. Add the whole parts to compute the result's fractional part,
+   carrying a 1 if needed (per Step 2)
+
+If Step 3 overflowed, then the overall addition overflowed.
+
+If the values being added have different signs, then the result's magnitude
+is the difference computed by subtracting the magnitude of the addend with
+the smaller magnitude from the magnitude of the addend with the larger
+magnitude. The result's sign is the sign of the addend with the larger
+magnitude. Note that overflow is not possible when adding `fixpoint` values
+with different signs.
+
+Subtraction of magnitudes can be implemented similarly to the approach
+for adding magnitudes described above. You'll need to consider how to detect
+whether a borrow of 1 from the whole part is needed.
+
+### `fixpoint_sub`
+
+Since `fixpoint_add` already handles negative values, `fixpoint_sub` can be
+implemented by calling `fixpoint_negate` and `fixpoint_add`, with the idea being
+
+$$a - b = a + -b$$
+
+### `fixpoint_mul`
+
+Multiplication can be approached in the following way. Think of the values being
+multiplied (the factors) as being 64-bit integers, with the whole part being the high 32 bits
+and the fractional part being the low 32 bits. The 64 bit factors should be multiplied
+to yield a 128-bit product.
+
+The following comment from the reference solution outlines a possible way to
+implement the multiplication:
+
+```c
+// The idea here is that we'll multiply the two 64 bit magnitudes
+// of left and right to produce a 128 bit product. The middle 64 bits
+// of the product of the magnitudes becomes the magnitude of the
+// result product. However, if any of the low 32 bits or high 32 bits of
+// the 128-bit magnitude product are non-zero, it means the numeric
+// product can't be represented exactly.
+//
+//   WX    left magnitude
+// * YZ    right magnitude
+// ----
+//  PRS    PRS = WX * Z
+// TUV     TUV = WX * Y
+//
+// Full (128-bit) magnitude of product is PRS + ( TUV << 32 )
+```
