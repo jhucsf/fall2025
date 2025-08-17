@@ -152,9 +152,9 @@ type. These functions return a `result_t` value to indicate whether the
 computed result was represented exactly, or whether overflow or underflow
 occurred.
 
-Note that `result_t` values are a bitset. There are two possible members,
+Note that a `result_t` values is a bitset. There are two possible members,
 `RESULT_OVERFLOW` and `RESULT_UNDERFLOW`. If the `RESULT_OVERFLOW` member
-is set it means that the whole part of the result's magnitude did not fit
+is set, it means that the whole part of the result's magnitude did not fit
 in 32 bits.  If the `RESULT_UNDERFLOW` member is set, it means that the
 fractional part of the result's magnitude did not fix in 32 bits.
 Note that underflow is only possible in the `fixpoint_mul` operation.
