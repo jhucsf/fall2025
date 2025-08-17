@@ -200,6 +200,7 @@ test_negate...passed!
 test_add...passed!
 test_sub...passed!
 test_mul...passed!
+test_compare...passed!
 All tests passed!
 ```
 
@@ -226,6 +227,77 @@ In Milestone 2, part of your grade will be based on the quality and
 comprehensiveness of the unit tests you write. Your unit tests should
 test all of the functions, not just the functions required for
 Milestone 2.
+
+## Running and Debugging Tests
+
+By default running the test program with the invocation `./fixpoint_tests`
+will run each test function in order. However, you can run just one
+test function by naming it on the command line. For example, the invocation
+
+```bash
+./fixpoint_tests test_add
+```
+
+will execute only the `test_add` test function.  This is useful when
+you are focusing on getting a specific test to pass. Also, because C
+is a memory-unsafe language, it's possible for an earlier test to corrupt
+the state of the program in a way that could affect the execution of
+later tests, so in general running only one test function will produce
+a more trustworthy result than running all of the test functions.
+
+If a unit test function fails, you can use `gdb` to debug the test function.
+For example, let's say that the unit test `test_add` is failing.
+Start by invoking `gdb` on the test program:
+
+```bash
+gdb ./fixpoint_tests
+```
+
+At the `gdb` prompt, set a breakpoint at the beginning of
+`test_add`, then run the program:
+
+```
+(gdb) break test_add
+Breakpoint 1 at 0x3b69: file fixpoint_tests.c, line 187.
+(gdb) run
+Starting program: /space/daveho/git/csf-fall2025-private/src/csf_assign01_solution/fixpoint_tests
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+test_init...passed!
+test_get_whole...passed!
+test_get_frac...passed!
+test_is_negative...passed!
+test_negate...passed!
+test_add...
+Breakpoint 1, test_add (objs=0x55555555d2a0) at fixpoint_tests.c:187
+187     void test_add( TestObjs *objs ) {
+```
+
+At this point, you can use the `next` and `step` commands to execute the
+code.  By stepping into the function call associated with the assertion
+failure, you can trace the execution and inspect data in order to pinpoint
+the cause of the issue.
+
+## Memory correctness
+
+In all C and C++ code you write, we expect that there are no memory errors,
+including
+
+* invalid reads
+* invalid writes
+* uses of uninitialized values
+* memory leaks
+
+We expect you to use the [valgrind](https://www.valgrind.org/) memory trace tool
+to check program execution for occurrences of memory errors. For this assignment,
+run
+
+```bash
+valgrind --leak-check=full ./fixpoint_tests
+```
+
+There should be no dynamic memory errors, and assuming that all of
+the unit tests pass, there should be no memory leaks.
 
 ## Hints and Suggestions
 
@@ -304,3 +376,37 @@ implement the multiplication:
 //
 // Full (128-bit) magnitude of product is PRS + ( TUV << 32 )
 ```
+
+## Submitting
+
+Before you submit, prepare a `README.txt` file so that it contains your
+names, and briefly summarizes each of your contributions to the submission
+(i.e., who worked on what functionality.) This may be very brief if you
+did not work with a partner.
+
+To submit your work:
+
+Run the following commands to create a `solution.zip` file:
+
+```
+rm -f solution.zip
+zip -9r solution.zip Makefile *.h *.c README.txt
+```
+
+Upload `solution.zip` to [Gradescope](https://www.gradescope.com/)
+as **Assignment 1 MS1** or **Assignment 1 MS2**, depending on which
+milestone you are submitting.
+
+Please check the files you uploaded to make sure they are the ones you
+intended to submit.
+
+## Autograder
+
+When you upload your submission to Gradescope, it will be tested by
+the autograder, which executes unit tests for each required function.
+Please note the following:
+
+* If your code does not compile successfully, all of the tests will fail
+* The autograder runs `valgrind` on your code, but it does *not* report
+  any information about the result of running `valgrind`: points will be
+  deducted if your code has memory errors or memory leaks!
