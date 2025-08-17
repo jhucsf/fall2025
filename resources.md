@@ -12,9 +12,11 @@ This section has links to some information resources you might find useful.
 
 ## Practice problems and exams
 
-
 Review materials for Exam 1:
 
+*Coming soon!*
+
+<!--
 * [Exam 1 practice questions](resources/exam1review.html), [Solutions](resources/exam1review-solutions.html)
 * [Midterm, Spring 2020](resources/midterm-spring2020.pdf) (Questions 1–3), [Solution](resources/midterm-spring2020-soln.pdf)
 * [Exam 1, Fall 2021](resources/exam01-fall2021.pdf), [Solution](resources/exam01-fall2021-soln.pdf)
@@ -32,6 +34,7 @@ Review materials for Exam 3:
 * [Final exam, Fall 2019](resources/final-fall2019.pdf) (Questions 4–5), [Solution](resources/final-fall2019-soln.pdf)
 * [Final exam, Spring 2020](resources/final-spring2020.pdf) (Questions 4–5), [Solution](resources/final-spring2020-soln.pdf)
 * [Exam 3, Fall 2021](resources/exam03-fall2021.pdf), [Solution](resources/exam03-fall2021-soln.pdf)
+-->
 
 ## x86-64 assembly language exercises
 
