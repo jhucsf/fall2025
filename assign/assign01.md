@@ -379,18 +379,17 @@ implement the multiplication:
 
 ## Submitting
 
-Before you submit, prepare a `README.txt` file so that it contains your
+Before you submit, edit the `README.txt` file so that it contains your
 names, and briefly summarizes each of your contributions to the submission
 (i.e., who worked on what functionality.) This may be very brief if you
 did not work with a partner.
 
 To submit your work:
 
-Run the following commands to create a `solution.zip` file:
+Run the following command to create a `solution.zip` file:
 
 ```
-rm -f solution.zip
-zip -9r solution.zip Makefile *.h *.c README.txt
+make solution.zip
 ```
 
 Upload `solution.zip` to [Gradescope](https://www.gradescope.com/)
