@@ -135,7 +135,7 @@ Your primary task in this assignment is to add code to the `fixpoint.c` source
 file to implement each of the public API functions.
 
 All of the operations that produce a result `fixpoint_t` value do
-so by modifying a `fixpoint` instance passed as a pointer
+so by modifying a `fixpoint_t` instance passed as a pointer
 (the `result` parameter.)
 
 ## `result_t`
@@ -206,6 +206,27 @@ All tests passed!
 If a test assertion fails, you will see a message indiating the source
 location of the failed assertion.
 
+## Writing Your Own Unit Tests
+
+The provided unit tests are intended to be useful, but are not
+comprehensive. You should add additional unit tests of your own
+to cover cases that aren't adequately tested by the provided tests.
+
+<div class='admonition info'>
+  <div class='title'>Note</div>
+  <div class='content' markdown='1'>
+Rather than adding more test code to the existing test functions
+in `fixpoint_tests.c`, you should add new test functions with additional
+test code. I.e., don't modify the `test_add` function, but instead
+add additional functions to test addition (e.g., `test_add_2`.)
+  </div>
+</div>
+
+In Milestone 2, part of your grade will be based on the quality and
+comprehensiveness of the unit tests you write. Your unit tests should
+test all of the functions, not just the functions required for
+Milestone 2.
+
 ## Hints and Suggestions
 
 This section has some advice on implementing specific operations.
@@ -243,7 +264,7 @@ If the values being added have different signs, then the result's magnitude
 is the difference computed by subtracting the magnitude of the addend with
 the smaller magnitude from the magnitude of the addend with the larger
 magnitude. The result's sign is the sign of the addend with the larger
-magnitude. Note that overflow is not possible when adding `fixpoint` values
+magnitude. Note that overflow is not possible when adding `fixpoint_t` values
 with different signs.
 
 Subtraction of magnitudes can be implemented similarly to the approach
