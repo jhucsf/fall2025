@@ -42,4 +42,4 @@ up an x86-64 Linux development environment. (There are a number of good options.
 
 Assignment | Type | Due
 ---------- | :--: | ---
-[Assignment 1: Fixed-Point Arithmetic](assign/assign01.html) | Pair | 
+[Assignment 1: Fixed-Point Arithmetic](assign/assign01.html) | Pair | MS1 due Wednesday, Sep 3<br>MS2 due Wednesday, Sep 10

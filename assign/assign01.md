@@ -9,6 +9,14 @@ Milestone 2: Due Wednesday, Sep 10 by 11 pm
 
 Assignment type: **Pair**, you may work with one partner
 
+<div class='admonition caution'>
+  <div class='title'>Caution!</div>
+  <div class='content' markdown='1'>
+This is a preliminary assignment description. Details are missing,
+and the content could change.
+  </div>
+</div>
+
 # Overview
 
 In this assignment, you will implement a simple C library providing arithmetic operations

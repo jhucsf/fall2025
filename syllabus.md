@@ -54,6 +54,7 @@ You should check the course website frequently.
 Courselore (announcements, discussion): <https://courselore.org/>
 
 Gradescope (assignment/exam submission and grading): <https://www.gradescope.com/>
+(note that you will access Gradescope using Canvas)
 
 Videos will be posted on Canvas: go to <http://my.jhu.edu>, log in,
 choose <b>Education</b> → <b>Canvas</b>, choose EN.601.229.01.FA25 from
