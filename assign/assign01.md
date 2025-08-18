@@ -3,7 +3,7 @@ layout: mathjax
 title: "Assignment 1: Fixed-Point Arithmetic"
 ---
 
-Milestone 1: Due Wednesday, Sep 3 by 11 pm
+Milestone 1: Due Wednesday, Sep 3 by 11 pm (note: at most 48 late hours may be used)
 
 Milestone 2: Due Wednesday, Sep 10 by 11 pm
 
