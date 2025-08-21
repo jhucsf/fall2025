@@ -38,7 +38,7 @@ Sep 10 | [ALU operations, arithmetic](lectures/lecture07-public.pdf), [alu.zip (
 Sep 12 | [Control flow](lectures/lecture08-public.pdf), [control.zip (example code)](lectures/control.zip) | *CSAPP* 3.6 | 
 Sep 15 | [Procedures, stacks](lectures/lecture09-public.pdf), [control2.zip (example code)](lectures/control2.zip) | *CSAPP* 3.7 | 
 Sep 17 | [Arrays and structs](lectures/lecture10-public.pdf), [arraystruct.zip (example code)](lectures/arraystruct.zip) | *CSAPP* 3.8–3.9 | 
-Sep 19 | [Assembly language in class exercise](lectures/assembly-exercise-public.pdf) |  | <!--[A2](assign/assign02.html) MS1 due-->
+Sep 19 | Assembly language in class exercise |  | <!--[A2](assign/assign02.html) MS1 due-->
 Sep 22 | [Code and data interactions, buffer overflows](lectures/lecture11-public.pdf), [buf.zip (example code)](lectures/buf.zip) | *CSAPP* 3.10 | 
 Sep 24 | Program optimization (basic techniques): see Canvas for slides | *CSAPP* 5.1–5.8 | 
 Sep 26 | [Pipelines](lectures/lecture13-public.pdf) | <i>P&amp;H</i> 4.5–4.7 | <!--[A2](assign/assign02.html) MS2 due-->
@@ -65,8 +65,9 @@ Nov 12 | [Network applications, HTTP](lectures/lecture28-public.pdf), [webclient
 Nov 14 | [Concurrency with pthreads](lectures/lecture29-public.pdf), [mt_webserver.zip (example code)](lectures/mt_webserver.zip) | *CSAPP* 12.3 | 
 Nov 17 | [Thread synchronization](lectures/lecture30-public.pdf), [synch.zip (example code)](lectures/synch.zip) | *CSAPP* 12.4–12.5 | <!--[A5](assign/assign05.html) MS1 due-->
 Nov 19 | [Parallelism, concurrency issues](lectures/lecture31-public.pdf), [synch2.zip (example code)](lectures/synch2.zip) | *CSAPP* 12.6–12.7 | 
+Nov 21 | [Concurrency with processes](lectures/lecture32-public.pdf), [mp_webserver.zip (example code)](lectures/mp_webserver.zip) | *CSAPP* 12.1 | 
 Nov 24–28 | *Fall Recess, no class* |  | 
-Dec 1 | [Concurrency with processes](lectures/lecture32-public.pdf), [mp_webserver.zip (example code)](lectures/mp_webserver.zip) | *CSAPP* 12.1 | 
-Dec 3 | [Concurrency with I/O multiplexing](lectures/lecture33-public.pdf), [iomux.zip (example code)](lectures/iomux.zip) | *CSAPP* 12.2 | 
+Dec 1 | [Concurrency with I/O multiplexing](lectures/lecture33-public.pdf), [iomux.zip (example code)](lectures/iomux.zip) | *CSAPP* 12.2 | 
+Dec 3 | Bonus topics (TBD) |  | 
 Dec 5 | Exam 3 review session |  | <!--[A5](assign/assign05.html) MS2 due-->
-May 6 | **Exam 3**, 6pm, Remsen 101 |  | 
+Dec 18 | **Exam 3**, 9 am, location TBD |  | 
