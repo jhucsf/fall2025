@@ -39,7 +39,7 @@ Milestone 1 (15% of the assignment grade):
 Milestone 2 (85% of the assignment grade):
 
 * Implementation of `fixpoint_add`, `fixpoint_sub`, `fixpoint_mul`,
-  and `fixpoint_compare` functions (65%)
+  `fixpoint_compare`, `fixpoint_format_hex`, and `fixpoint_parse_hex` functions (65%)
 * Comprehensiveness and quality of your unit tests (10%)
 * Design and coding style (10%)
 
@@ -384,6 +384,38 @@ implement the multiplication:
 //
 // Full (128-bit) magnitude of product is PRS + ( TUV << 32 )
 ```
+
+### `fixpoint_format_hex`
+
+You should be able to leverage the [`snprintf`](https://cplusplus.com/reference/cstdio/snprintf/)
+function to do most of the work for `fixpoint_format_hex`. A couple things to
+think about:
+
+* You'll need to make sure that the hex digits of the fractional part
+  are placed correctly. For example, if the `fraction` field of a
+  `fixpoint_t` value is equal to 1, then the correct hex digits for
+  the fraction part are `00000001`, not just `1`
+* You will likely need to write some code to trim trailing zeroes
+  from the fractional part
+
+### `fixpoint_parse_hex`
+
+You should be able to leverage the [`sscanf`](https://cplusplus.com/reference/cstdio/sscanf/)
+function to do much of the work needed for `fixpoint_parse_hex`. A couple things
+to think about
+
+* You'll want to know how many hex digits were matched for the whole
+  and fractional part; the `%n` conversion is useful for this purpose,
+  since it lets you capture how many characters from the string have
+  been used at a particular point in the format
+* You'll need to make sure that the hex digits of the fractional part
+  are incorporated into the fraction value at the correct place:
+  for example, a string ending in `.8` means that the `fraction` field
+  should be set to `0x80000000`, not `0x8`
+* Keep in mind that the whole and fractional parts should be represented
+  by at most 8 hex digits; if there are more than 8 hex digits in either
+  the whole part or the fractional part, then the formatted string is
+  invalid
 
 ## Submitting
 
