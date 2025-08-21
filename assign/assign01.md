@@ -209,6 +209,8 @@ test_add...passed!
 test_sub...passed!
 test_mul...passed!
 test_compare...passed!
+test_format_hex...passed!
+test_parse_hex...passed!
 All tests passed!
 ```
 
