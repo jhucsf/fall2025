@@ -9,14 +9,6 @@ Milestone 2: Due Wednesday, Sep 10 by 11 pm
 
 Assignment type: **Pair**, you may work with one partner
 
-<div class='admonition caution'>
-  <div class='title'>Caution!</div>
-  <div class='content' markdown='1'>
-This is a preliminary assignment description. Details are missing,
-and the content could change.
-  </div>
-</div>
-
 # Overview
 
 In this assignment, you will implement a simple C library providing arithmetic operations
@@ -164,7 +156,7 @@ Note that a `result_t` values is a bitset. There are two possible members,
 `RESULT_OVERFLOW` and `RESULT_UNDERFLOW`. If the `RESULT_OVERFLOW` member
 is set, it means that the whole part of the result's magnitude did not fit
 in 32 bits.  If the `RESULT_UNDERFLOW` member is set, it means that the
-fractional part of the result's magnitude did not fix in 32 bits.
+fractional part of the result's magnitude did not fit in 32 bits.
 Note that underflow is only possible in the `fixpoint_mul` operation.
 
 There are four possible `result_t` values:
