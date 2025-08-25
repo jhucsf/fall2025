@@ -127,6 +127,8 @@ to perform operations on `fixpoint_t` instances:
 * `fixpoint_sub`
 * `fixpoint_mul`
 * `fixpoint_compare`
+* `fixpoint_format_hex`
+* `fixpoint_parse_hex`
 
 Each public API function has a detailed documentation comment describing the
 expected behavior of the function.
