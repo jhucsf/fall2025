@@ -31,11 +31,8 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
-<!--
 * **Aug 25** — [Assignment 1](assign/assign01.html) has two milestones,
   due Wednesday, Sep 3rd, and Wednesday, Sep 10th, respectively.
--->
-
 * **Aug 17** — Welcome back! You will need an iClicker remote in order
   to participate in in-class peer instruction activities. You have
   two options:
