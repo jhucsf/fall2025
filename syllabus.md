@@ -30,7 +30,12 @@ Head CAs:
 
 CAs:
 
-*Coming soon!*
+* Elena Vodychko, <evodych1@jh.edu>
+* Matthew Song, <msong29@jh.edu>
+* Lawrence Cai, <lcai18@jhu.edu>
+* Brady Bock, <bbock4@jh.edu>
+* Trevor Black, <tblack20@jhu.edu>
+* Akshaya Ajith, <aajith1@jh.edu>
 
 ## Meeting
 
