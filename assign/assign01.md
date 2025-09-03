@@ -9,6 +9,11 @@ Milestone 2: Due Wednesday, Sep 10 by 11 pm
 
 Assignment type: **Pair**, you may work with one partner
 
+*Update 9/3*: clarified what should happen if an overflow involving
+negative values in [`fixpoint_add`](#fixpoint_add),
+[`fixpoint_sub`](#fixpoint_sub), or [`fixpoint_mul`](#fixpoint_mul) occurs
+
+
 # Overview
 
 In this assignment, you will implement a simple C library providing arithmetic operations
@@ -326,6 +331,28 @@ as the sign of the values being added. Note that overflow is possible.
 If overflow occurs, the result value's whole part should be the truncation of
 the correct whole part, i.e., just the low 32 bits of the correct whole part.
 
+<div class='admonition caution'>
+  <div class='title'>Special Case</div>
+  <div class='content' markdown='1'>
+Note that if an overflow occurs when adding two negative values,
+then according to the description above,
+
+1. The `whole` and `frac` fields should represent the truncation of
+   the correct sum
+2. The `negative` field should be set to `true`, since adding two negative
+   values should mathematically yield a negative sum
+
+This means that the resulting `fixpoint_t` value could violate the
+general rule that a result that is numerically equal to 0 should not
+be negative, since the overflow might result in both `whole` and
+`frac` being 0.
+
+We recommend that you write at least one unit test to make sure that your
+implementation of `fixpoint_add` behaves correctly in when negative
+overflow occurs.
+  </div>
+</div>
+
 Addition of magnitudes can be implemented as follows:
 
 1. Add the fractional parts to compute the result's fractional part
@@ -353,6 +380,14 @@ Since `fixpoint_add` already handles negative values, `fixpoint_sub` can be
 implemented by calling `fixpoint_negate` and `fixpoint_add`, with the idea being
 
 $$a - b = a + -b$$
+
+<div class='admonition caution'>
+  <div class='title'>Special Case</div>
+  <div class='content' markdown='1'>
+Note that the same special case described for [`fixpoint_add`](#fixpoint_add)
+could occur in a call to `fixpoint_sub`.
+  </div>
+</div>
 
 ### `fixpoint_mul`
 
