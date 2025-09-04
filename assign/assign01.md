@@ -9,9 +9,9 @@ Milestone 2: Due Wednesday, Sep 10 by 11 pm
 
 Assignment type: **Pair**, you may work with one partner
 
-*Update 9/3*: clarified what should happen if an overflow involving
-negative values in [`fixpoint_add`](#fixpoint_add),
-[`fixpoint_sub`](#fixpoint_sub), or [`fixpoint_mul`](#fixpoint_mul) occurs
+*Update 9/3*: clarified what should happen if an overflow or underflow involving
+negative values occurs in [`fixpoint_add`](#fixpoint_add),
+[`fixpoint_sub`](#fixpoint_sub), or [`fixpoint_mul`](#fixpoint_mul)
 
 
 # Overview
@@ -385,7 +385,9 @@ $$a - b = a + -b$$
   <div class='title'>Special Case</div>
   <div class='content' markdown='1'>
 Note that the same special case described for [`fixpoint_add`](#fixpoint_add)
-could occur in a call to `fixpoint_sub`.
+could occur in a call to `fixpoint_sub`. Specifically, this could occur
+in $$a-b$$ if $$a$$ is negative, $$b$$ is positive, and $$a + -b$$ causes an
+overflow that causes both `whole` and `frac` to be zero in the result.
   </div>
 </div>
 
@@ -415,6 +417,17 @@ implement the multiplication:
 //
 // Full (128-bit) magnitude of product is PRS + ( TUV << 32 )
 ```
+
+<div class='admonition caution'>
+  <div class='title'>Special Case</div>
+  <div class='content' markdown='1'>
+If overflow or underflow cause the result of a multiplication to
+be zero (i.e., both `whole` and `frac` are zero due to truncation), the `negative`
+field should still indicate whether or not the result *should have been*
+negative. This is similar to the special cases for `fixpoint_add`
+and `fixpoint_sub` described above.
+  </div>
+</div>
 
 ### `fixpoint_format_hex`
 
