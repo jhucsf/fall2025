@@ -236,7 +236,11 @@ Original image | Transformed image
 
 ### The `transpose` transformation
 
-TODO: describe
+In the `transpose` transformation, which can only be applied to square images
+(where the image width and height are the same), the row and column of each
+source pixel are swapped to yield the row and column of the destination
+pixel. I.e., a pixel at row $$i$$ and column $$j$$ in the input image should
+be placed at row $$j$$ and column $$i$$ in the output image.
 
 Original image | Transformed image
 :------------: | :---------------:
