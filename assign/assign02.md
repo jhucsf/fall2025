@@ -272,6 +272,8 @@ Note that in these computations, the floor operations indicate that
 integer division is used. You will not need to use floating-point
 operations.
 
+It should be sufficient to use 32-bit integers for these computations.
+
 Original image | Transformed image
 :------------: | :---------------:
 <a href="img/dice.png"><img style="width: 20em;" alt="original dice image" src="img/dice.png"></a > | <a href="img/dice_ellipse.png"><img style="width: 20em;" alt="ellipse cropped dice image " src="img/dice_ellipse.png"></a>
