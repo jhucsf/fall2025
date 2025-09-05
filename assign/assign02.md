@@ -233,7 +233,6 @@ Original image | Transformed image
 :------------: | :---------------:
 <a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_complement.png"><img style="width: 20em;" alt="bitwise complement cat image " src="img/ingo_complement.png"></a>
 
-
 ### The `transpose` transformation
 
 In the `transpose` transformation, which can only be applied to square images
@@ -246,15 +245,36 @@ Original image | Transformed image
 :------------: | :---------------:
 <a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_transpose.png"><img style="width: 20em;" alt="transposed cat image " src="img/ingo_transpose.png"></a>
 
-
 ### The `ellipse` transformation
 
-TODO: describe
+In the `ellipse` transformation, pixels within an centered ellipse
+are retained with their original color component and alpha values,
+while pixels outside of the ellipse are set to fully-opaque black.
+
+Determining which pixels are in the ellipse should be done as follows.
+
+Compute values $$a = \lfloor w/2 \rfloor$$ and $$b = \lfloor h/2 \rfloor$$,
+where $$w$$ is the image width and $$h$$ is the image height.
+
+Consider the pixel at row $$b+1$$ and column $$a+1$$ as being the center
+pixel of the image.
+
+For each pixel in the image, compute $$x$$ as the horizontal distance
+from the center pixel, and $$y$$ as the vertical distance from the
+center pixel.
+
+A pixel is in the ellipse, and should be copied to the output image,
+if it satisfies the inequality
+
+$$\lfloor (10,000 \times x^{2})/a^{2} \rfloor + \lfloor (10,000 \times y^{2})/b^{2} \rfloor < 10,000$$
+
+Note that in these computations, the floor operations indicate that
+integer division is used. You will not need to use floating-point
+operations.
 
 Original image | Transformed image
 :------------: | :---------------:
 <a href="img/dice.png"><img style="width: 20em;" alt="original dice image" src="img/dice.png"></a > | <a href="img/dice_ellipse.png"><img style="width: 20em;" alt="ellipse cropped dice image " src="img/dice_ellipse.png"></a>
-
 
 ### The `emboss` transformation
 
@@ -263,7 +283,6 @@ TODO: describe
 Original image | Transformed image
 :------------: | :---------------:
 <a href="img/dice.png"><img style="width: 20em;" alt="original dice image" src="img/dice.png"></a > | <a href="img/dice_emboss.png"><img style="width: 20em;" alt="embossed dice image " src="img/dice_emboss.png"></a>
-
 
 ## `c_imgproc` and `asm_imgproc` programs
 
