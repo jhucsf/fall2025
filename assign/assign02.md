@@ -417,7 +417,7 @@ just to ensure that `%rsp` is aligned correctly.
 We *strongly* recommend that you have a comment in each function explaining
 how it uses callee-saved registers and stack memory, since these are
 the equivalent of local variables in assembly code. For example,
-here is a comment taken from the implementation of the `imgproc_fade`
+here is a comment taken from the implementation of the `imgproc_XXX`
 function in the reference solution:
 
 <a name='register-memory-comment'>
@@ -425,20 +425,10 @@ function in the reference solution:
 ```c
 /*
  * Register use:
- *   %r12d - i (pixel row index)
- *   %r13d - j (pixel column index)
- *   %r14 - pointer to input Image
- *   %r15 - pointer to output Image
- *   %rbx - computed pixel fade factor (row factor * col factor)
+ *   TODO
  *
  * Stack memory:
- *   -4(%rbp)  - current pixel value
- *   -8(%rbp)  - pixel r component value (from get_r)
- *   -12(%rbp) - pixel g component value (from get_g)
- *   -16(%rbp) - pixel b component value (from get_b)
- *   -20(%rbp) - pixel a component value (from get_a)
- *   -24(%rbp) - computed pixel index
- *   -32(%rbp) - computed row factor (from gradient fn)
+ *   TODO
  */
 ```
 
