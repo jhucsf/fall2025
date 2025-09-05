@@ -223,7 +223,7 @@ the red, green, and blue color component values should be replaced by their
 bitwise complements. In other words, for just the color component bits,
 each 1 bit should be replaced by 0, and each 0 bit should be replaced by 1.
 The C `~` operator and the x86-64 `not` instruction can implement this
-transformation.
+transformation. All alpha values should remain unmodified.
 
 Visually, this transformation has the effect of making intense color
 component values dim and dim color component value intense.
