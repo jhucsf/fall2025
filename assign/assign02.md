@@ -218,7 +218,16 @@ meaning of the return value (for the non-`void` functions.)
 
 ### The `complement` transformation
 
-TODO: describe
+In the `complement` transformation, the bits in each pixel value representing
+the red, green, and blue color component values should be replaced by their
+bitwise complements. In other words, for just the color component bits,
+each 1 bit should be replaced by 0, and each 0 bit should be replaced by 1.
+The C `~` operator and the x86-64 `not` instruction can implement this
+transformation.
+
+Visually, this transformation has the effect of making intense color
+component values dim and dim color component value intense.
+(Think about why this happens!)
 
 Original image | Transformed image
 :------------: | :---------------:
