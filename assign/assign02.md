@@ -220,17 +220,37 @@ meaning of the return value (for the non-`void` functions.)
 
 TODO: describe
 
+Original image | Transformed image
+:------------: | :---------------:
+<a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_complement.png"><img style="width: 20em;" alt="vertically mirrored cat image " src="img/ingo_complement.png"></a>
+
+
 ### The `transpose` transformation
 
 TODO: describe
+
+Original image | Transformed image
+:------------: | :---------------:
+<a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_transpose.png"><img style="width: 20em;" alt="vertically mirrored cat image " src="img/ingo_transpose.png"></a>
+
 
 ### The `ellipse` transformation
 
 TODO: describe
 
+Original image | Transformed image
+:------------: | :---------------:
+<a href="img/dice.png"><img style="width: 20em;" alt="original cat image" src="img/dice.png"></a > | <a href="img/dice_ellipse.png"><img style="width: 20em;" alt="vertically mirrored cat image " src="img/dice_ellipse.png"></a>
+
+
 ### The `emboss` transformation
 
 TODO: describe
+
+Original image | Transformed image
+:------------: | :---------------:
+<a href="img/dice.png"><img style="width: 20em;" alt="original cat image" src="img/dice.png"></a > | <a href="img/dice_emboss.png"><img style="width: 20em;" alt="vertically mirrored cat image " src="img/dice_emboss.png"></a>
+
 
 ## `c_imgproc` and `asm_imgproc` programs
 
