@@ -480,13 +480,13 @@ If a unit test fails, you should use `gdb` to debug the code to determine
 why it is not working.
 
 Setting a breakpoint on the specific test function that is failing is
-one way to start. For example, if the `test_to_grayscale` test function
+one way to start. For example, if the `test_is_in_ellipse` test function
 is failing, in `gdb` set a breakpoint on that function, then run the
 program so that it only runs that test function:
 
 ```
-break test_to_grayscale
-run test_to_grayscale
+break test_is_in_ellipse
+run test_is_in_ellipse
 ```
 
 You will gain control of the program at the beginning of the test
@@ -495,11 +495,11 @@ variables, registers, and memory, etc.
 
 Another good option for setting a breakpoint is the `tctest_fail`
 function, because this is the function called when a test assertion
-fails. For example, assuming `test_to_grayscale` has an assertion failure:
+fails. For example, assuming `test_is_in_ellipse` has an assertion failure:
 
 ```
 break tctest_fail
-run test_to_grayscale
+run test_is_in_ellipse
 ```
 
 When the `tctest_fail` breakpoint is reached, use the `up` command (as many
