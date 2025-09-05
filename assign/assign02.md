@@ -43,15 +43,15 @@ helper functions, and your unit tests will help you gain confidence in their
 correctness.
 
 In Milestone 2, you are required to implement the
-[`complement`](#the-complement-transformation), and
+[`complement`](#the-complement-transformation) and
 [`transpose`](#the-transpose-transformation)
 transformations in assembly language. We expect you to have comprehensive unit tests
 for the assembly language implementations of your helper functions. (In theory you can
 just use the ones you implemented in Milestone 1.)
 
 In Milestone 3, you will implement the
-[`emboss`](#the-emboss-transformation) and
-[`ellipse`](#the-ellipse-transformation)
+[`ellipse`](#the-ellipse-transformation) and
+[`emboss`](#the-emboss-transformation)
 transformations.
 
 Note that in each milestone, we expect all of the tests executed
