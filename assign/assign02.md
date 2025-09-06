@@ -226,8 +226,8 @@ The C `~` operator and the x86-64 `not` instruction can implement this
 transformation. All alpha values should remain unmodified.
 
 Visually, this transformation has the effect of making intense color
-component values dim and dim color component value intense.
-(Think about why this happens!)
+component values dim and dim color component value intense,
+much like a photographic negative.  (Think about why this happens!)
 
 Original image | Transformed image
 :------------: | :---------------:
