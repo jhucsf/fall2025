@@ -280,7 +280,32 @@ Original image | Transformed image
 
 ### The `emboss` transformation
 
-TODO: describe
+The `emboss` transformation generates an "emboss" effect. The pixels
+of the source image are transformed as follows.
+
+The top row and column of pixels are transformed so that their
+red, green, and blue color component values are all set to 128,
+and their alpha values are not modified.
+
+For all other pixels, we consider the pixel's color component
+values $$r$$, $$g$$, and $$b$$, and also the pixel's upper-left neighbor's
+color component values $$nr$$, $$ng$$, and $$nb$$. In comparing the color
+component values of the pixel and its upper-left neighbor,
+we consider the differences $$(nr-r)$$, $$(ng-g)$$, and $$(nb-b)$$.
+Whichever of these differences has the largest absolute value
+we refer to as `diff`. (Note that in the case that more than one
+difference has the same absolute value, the red difference has
+priority over green and blue, and the green difference has priority
+over blue.)
+
+From the value `diff`, compute the value `gray` as `128 + diff`.
+However, `gray` should be clamped so that it is in the range
+0–255. I.e., if it's negative, it should become 0, and if
+it is greater than 255, it should become 255.
+
+For all pixels not in the top or left row, the pixel's red, green,
+and blue color component values should be set to `gray`, and the
+alpha value should be left unmodified.
 
 Original image | Transformed image
 :------------: | :---------------:
