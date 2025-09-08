@@ -256,7 +256,7 @@ Determining which pixels are in the ellipse should be done as follows.
 Compute values $$a = \lfloor w/2 \rfloor$$ and $$b = \lfloor h/2 \rfloor$$,
 where $$w$$ is the image width and $$h$$ is the image height.
 
-Consider the pixel at row $$b+1$$ and column $$a+1$$ as being the center
+Consider the pixel at row $$b$$ and column $$a$$ as being the center
 pixel of the image.
 
 For each pixel in the image, compute $$x$$ as the horizontal distance
@@ -266,7 +266,7 @@ center pixel.
 A pixel is in the ellipse, and should be copied to the output image,
 if it satisfies the inequality
 
-$$\lfloor (10,000 \times x^{2})/a^{2} \rfloor + \lfloor (10,000 \times y^{2})/b^{2} \rfloor < 10,000$$
+$$\lfloor (10,000 \times x^{2})/a^{2} \rfloor + \lfloor (10,000 \times y^{2})/b^{2} \rfloor \le 10,000$$
 
 Note that in these computations, the floor operations indicate that
 integer division is used. You will not need to use floating-point
