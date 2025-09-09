@@ -301,7 +301,7 @@ over blue.)
 From the value `diff`, compute the value `gray` as `128 + diff`.
 However, `gray` should be clamped so that it is in the range
 0–255. I.e., if it's negative, it should become 0, and if
-it is greater than 255, it should become 255.
+it's greater than 255, it should become 255.
 
 For all pixels not in the top or left row, the pixel's red, green,
 and blue color component values should be set to `gray`, and the
