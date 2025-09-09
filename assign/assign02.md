@@ -375,7 +375,8 @@ uint32_t get_g( uint32_t pixel );
 uint32_t get_b( uint32_t pixel );
 uint32_t get_a( uint32_t pixel );
 uint32_t make_pixel( uint32_t r, uint32_t g, uint32_t b, uint32_t a );
-// TODO: other helper functions
+int32_t compute_index( struct Image *img, int32_t row, int32_t col );
+int is_in_ellipse( struct Image *img, int32_t row, int32_t col );
 ```
 
 ## Image tests
@@ -461,9 +462,9 @@ if your function doesn't allocate storate for any local variables in memory,
 just to ensure that `%rsp` is aligned correctly.
 
 We *strongly* recommend that you have a comment in each function explaining
-how it uses callee-saved registers and stack memory, since these are
+how it uses callee-saved registers and (if relevant) stack memory, since these are
 the equivalent of local variables in assembly code. For example,
-here is a comment taken from the implementation of the `imgproc_XXX`
+here is a comment taken from the implementation of the `imgproc_emboss`
 function in the reference solution:
 
 <a name='register-memory-comment'>
@@ -471,10 +472,11 @@ function in the reference solution:
 ```c
 /*
  * Register use:
- *   TODO
- *
- * Stack memory:
- *   TODO
+ *   %r12 - pointer to input Image
+ *   %r13 - pointer to output Image
+ *   %r14d - row index
+ *   %r15d - column index
+ *   %ebx - original/updated pixel value
  */
 ```
 
