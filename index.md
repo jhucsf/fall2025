@@ -31,6 +31,10 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Sep 11** — Due to unexpected unavailability of the ugrad machines
+  on the afternoon of September 10th, we are extending the due date
+  on Milestone 2 of [Assignment 1](assign/assign01.html) by 24 hours
+  to 11 pm on Thursday, September 11th.
 * **Sep 10** — [Assignment 2](assign/assign02.html) has three milestones,
   due Friday, Sep 19th, Friday, Sep 26th, and Friday, Oct 3rd, respectively.
 * **Sep 4** — Some clarifications regarding `fixpoint_add`, `fixpoint_sub`,

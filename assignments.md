@@ -42,5 +42,5 @@ up an x86-64 Linux development environment. (There are a number of good options.
 
 Assignment | Type | Due
 ---------- | :--: | ---
-[Assignment 1: Fixed-Point Arithmetic](assign/assign01.html) | Pair | MS1 due Wednesday, Sep 3<br>MS2 due Wednesday, Sep 10
+[Assignment 1: Fixed-Point Arithmetic](assign/assign01.html) | Pair | MS1 due Wednesday, Sep 3<br>MS2 due <strike>Wednesday, Sep 10</strike> Thursday, Sep 11
 [Assignment 2: Image Processing](assign/assign02.html) | Pair | MS1 due Friday, Sep 19<br>MS2 due Friday, Sep 26<br>MS3 due Friday, Oct 3
