@@ -283,7 +283,7 @@ Original image | Transformed image
 The `emboss` transformation generates an "emboss" effect. The pixels
 of the source image are transformed as follows.
 
-The top row and column of pixels are transformed so that their
+The top row and left column of pixels are transformed so that their
 red, green, and blue color component values are all set to 128,
 and their alpha values are not modified.
 
