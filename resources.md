@@ -36,6 +36,10 @@ Review materials for Exam 3:
 * [Exam 3, Fall 2021](resources/exam03-fall2021.pdf), [Solution](resources/exam03-fall2021-soln.pdf)
 -->
 
+## General resources
+
+* [Floating Point Visually Explained](https://fabiensanglard.net/floating_point_visually_explained/)
+
 ## x86-64 assembly language exercises
 
 * [Assembly language mini-exercises](resources/assemblyMini.html)
