@@ -31,6 +31,10 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Sep 25** — [Assignment 2](assign/assign02.html) has been updated so
+  that the evaluation of the quality and comprehensiveness of your unit
+  tests (for your helper functions) will happen in Milestone 3,
+  not Milestone 2.
 * **Sep 10** — [Assignment 2](assign/assign02.html) has three milestones,
   due Friday, Sep 19th, Friday, Sep 26th, and Friday, Oct 3rd, respectively.
 * **Sep 4** — Some clarifications regarding `fixpoint_add`, `fixpoint_sub`,

@@ -3,12 +3,6 @@ layout: mathjax
 title: "Assignment 2: Image Processing"
 ---
 
-<!--
-Note for future semesters:
-have students write their own test functions rather than
-modifying existing ones when they add unit tests.
--->
-
 **Due**:
 
 * Milestone 1 due **Friday, Sep 19th** by 11 pm
@@ -16,6 +10,9 @@ modifying existing ones when they add unit tests.
 * Milestone 3 due **Friday, Oct 3rd** by 11 pm
 
 This is a **pair** assignment, so you may work with one partner.
+
+*Update 9/25*: the evaluation of the quality and comprehensiveness of your
+helper function unit tests will happen in Milestone 3, not Milestone 2.
 
 <div class='admonition danger'>
   <div class='title'>Warning!</div>
@@ -136,16 +133,16 @@ Milestone 1: 30%
 * Unit testing of helper functions: 12.5%
 * Design/coding style of C functions: 5%
 
-Milestone 2: 45%
+Milestone 2: 35%
 
 * Functional correctness of `imgproc_complement` and `imgproc_transpose`: 30%
-* Unit testing of helper functions: 10%
 * Design/coding style of assembly functions: 5%
 
-Milestone 3: 25%
+Milestone 3: 35%
 
 * Functional correctness of `imgproc_ellipse`: 10%
 * Functional correctness of `imgproc_emboss`: 10%
+* Unit testing of helper functions: 10%
 * Design/coding style of assembly functions: 5%
 
 ## Getting started
