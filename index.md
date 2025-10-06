@@ -31,6 +31,10 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Oct 6** — [Assignment 3](assign/assign03.html), has three milestones,
+  due Friday, Oct 10th, Friday, Oct 24th, and Friday, Oct 31st, respectively.
+  Note that no late hours may be used on MS1, and at most 48 late hours may
+  be used on MS2.
 * **Sep 25** — [Assignment 2](assign/assign02.html) has been updated so
   that the evaluation of the quality and comprehensiveness of your unit
   tests (for your helper functions) will happen in Milestone 3,
