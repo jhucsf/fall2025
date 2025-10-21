@@ -31,6 +31,9 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Oct 21** — Exam 2 will take place in class on Monday, November 3rd.
+  Review materials are available on the [Resources](resources.html)
+  page. A review session will be held in class on Friday, Oct 31st.
 * **Oct 6** — [Assignment 3](assign/assign03.html), has three milestones,
   due Friday, Oct 10th, Friday, Oct 24th, and Friday, Oct 31st, respectively.
   Note that no late hours may be used on MS1, and at most 48 late hours may
