@@ -31,6 +31,8 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Nov 2** — [Assignment 4](assign/assign04.html) is due Monday,
+  Nov 10th, by 11 pm.
 * **Oct 21** — Exam 2 will take place in class on Monday, November 3rd.
   Review materials are available on the [Resources](resources.html)
   page. A review session will be held in class on Friday, Oct 31st.
