@@ -70,4 +70,4 @@ Nov 24–28 | *Fall Recess, no class* |  |
 Dec 1 | [Concurrency with I/O multiplexing](lectures/lecture33-public.pdf), [iomux.zip (example code)](lectures/iomux.zip) | *CSAPP* 12.2 | 
 Dec 3 | Bonus topics (TBD) |  | 
 Dec 5 | Exam 3 review session |  | <!--[A5](assign/assign05.html) MS2 due-->
-Dec 18 | **Exam 3**, 9 am, location TBD |  | 
+Dec 18 | **Exam 3**, 9 am, Remsen 101 |  | 
