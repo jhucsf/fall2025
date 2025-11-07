@@ -31,6 +31,9 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Nov 7** — [Assignment 5](assign/assign05.html) has two milestones,
+  due Monday, Nov 17th, and Friday, Dec 5th, respectivey. Note that you
+  may **not** use late hours on MS2: please plan accordingly.
 * **Nov 2** — [Assignment 4](assign/assign04.html) is due Monday,
   Nov 10th, by 11 pm.
 * **Oct 21** — Exam 2 will take place in class on Monday, November 3rd.
