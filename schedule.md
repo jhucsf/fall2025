@@ -63,11 +63,11 @@ Nov 7 | [Networks, Internet Protocol](lectures/lecture26-public.pdf) | *CSAPP* 1
 Nov 10 | [Sockets, Application Protocols](lectures/lecture27-public.pdf), [sockets.zip (example code)](lectures/sockets.zip) | *CSAPP* 11.4 | [A4](assign/assign04.html) due
 Nov 12 | [Network applications, HTTP](lectures/lecture28-public.pdf), [webclient.zip (example code)](lectures/webclient.zip), [webserver.zip (example code)](lectures/webserver.zip) | *CSAPP* 11.4–11.6 | 
 Nov 14 | [Concurrency with pthreads](lectures/lecture29-public.pdf), [mt_webserver.zip (example code)](lectures/mt_webserver.zip) | *CSAPP* 12.3 | 
-Nov 17 | [Thread synchronization](lectures/lecture30-public.pdf), [synch.zip (example code)](lectures/synch.zip) | *CSAPP* 12.4–12.5 | <!--[A5](assign/assign05.html) MS1 due-->
+Nov 17 | [Thread synchronization](lectures/lecture30-public.pdf), [synch.zip (example code)](lectures/synch.zip) | *CSAPP* 12.4–12.5 | [A5](assign/assign05.html) MS1 due
 Nov 19 | [Parallelism, concurrency issues](lectures/lecture31-public.pdf), [synch2.zip (example code)](lectures/synch2.zip) | *CSAPP* 12.6–12.7 | 
 Nov 21 | [Concurrency with processes](lectures/lecture32-public.pdf), [mp_webserver.zip (example code)](lectures/mp_webserver.zip) | *CSAPP* 12.1 | 
 Nov 24–28 | *Fall Recess, no class* |  | 
 Dec 1 | [Concurrency with I/O multiplexing](lectures/lecture33-public.pdf), [iomux.zip (example code)](lectures/iomux.zip) | *CSAPP* 12.2 | 
 Dec 3 | Bonus topics (TBD) |  | 
-Dec 5 | Exam 3 review session |  | <!--[A5](assign/assign05.html) MS2 due-->
+Dec 5 | Exam 3 review session |  | [A5](assign/assign05.html) MS2 due
 Dec 18 | **Exam 3**, 9 am, Remsen 101 |  | 
