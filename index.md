@@ -31,6 +31,10 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Dec 2** — Exam 3 will take place Thursday, December 18th at
+  9 am in Remsen 101. Review materials are available on the
+  [Resources](resources.html) page. We will have a review session
+  in class on Friday (Dec 5th): please bring questions!
 * **Nov 7** — [Assignment 5](assign/assign05.html) has two milestones,
   due Monday, Nov 17th, and Friday, Dec 5th, respectivey. Note that you
   may **not** use late hours on MS2: please plan accordingly.
