@@ -68,6 +68,6 @@ Nov 19 | [Parallelism, concurrency issues](lectures/lecture31-public.pdf), [sync
 Nov 21 | [Concurrency with processes](lectures/lecture32-public.pdf), [mp_webserver.zip (example code)](lectures/mp_webserver.zip) | *CSAPP* 12.1 | 
 Nov 24–28 | *Fall Recess, no class* |  | 
 Dec 1 | [Concurrency with I/O multiplexing](lectures/lecture33-public.pdf), [iomux.zip (example code)](lectures/iomux.zip) | *CSAPP* 12.2 | 
-Dec 3 | Bonus topics (TBD) |  | 
+Dec 3 | [Bonus topics](lectures/lecture34-public.pdf), [bonus.zip (example code)](lectures/bonus.zip) |  | 
 Dec 5 | Exam 3 review session |  | [A5](assign/assign05.html) MS2 due
 Dec 18 | **Exam 3**, 9 am, Remsen 101 |  | 
